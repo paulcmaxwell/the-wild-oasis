@@ -14,8 +14,7 @@ export function useUpdateUser() {
     mutationFn: updateCurrentUser,
     onSuccess: ({ user }) => {
       toast.success("User account successfully updated"); // Sends success notification
-      //   queryClient.setQueryData("user", user); // Update cache in React Query
-      queryClient.invalidateQueries({ queryKey: ["user"] }); // Re-fetch data from API
+      queryClient.setQueryData(["user"], user); // Update cache in React Query
     },
     onError: (err) => {
       toast.error(err.message);
