@@ -1,6 +1,6 @@
 # The Wild Oasis
 
-An AirBNB clone.
+An AirBNB clone. Deployed on Netflify at http://a-wild-oasis.netlify.app.
 Built to practice with basic React programming patterns and libraries, including:
 
 - Context API
